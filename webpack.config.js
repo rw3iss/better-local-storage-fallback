@@ -1,7 +1,7 @@
 module.exports = {
-  output: {
-    library: 'localStorageFallback',
-    libraryTarget: 'umd',
-    libraryExport: 'default',
-  },
+    output: {
+        library: 'betterLocalStorageFallback',
+        libraryTarget: 'umd',
+        libraryExport: 'default',
+    },
 }
