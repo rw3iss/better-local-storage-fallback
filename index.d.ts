@@ -1,5 +1,5 @@
 type StorageFallback = Pick<Storage, 'clear' | 'getItem' | 'setItem' | 'removeItem'>;
-declare module 'local-storage-fallback' {
+declare module 'better-local-storage-fallback' {
     const storage: Storage | StorageFallback;
     export default storage;
 

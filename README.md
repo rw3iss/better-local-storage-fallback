@@ -1,20 +1,21 @@
-# local-storage-fallback
-Check and use appropriate storage adapter for browser (localStorage, sessionStorage, cookies, memory)
+# better-local-storage-fallback
 
-[![npm version](https://badge.fury.io/js/local-storage-fallback.svg)](https://badge.fury.io/js/local-storage-fallback)
+Forked/originally from @ripeworks/local-storage-fallback.
+
+[![npm version](https://badge.fury.io/js/better-local-storage-fallback.svg)](https://badge.fury.io/js/better-local-storage-fallback)
 
 ## Installation
 
 ```
-$ npm install local-storage-fallback
+$ npm install rw3iss/better-local-storage-fallback
 ```
 
 ## Usage
 
 ```js
-import storage from 'local-storage-fallback' // if you use es6 or typescript
+import storage from 'better-local-storage-fallback' // if you use es6 or typescript
 // use object destructuring when using require()
-// const {storage} = require('local-storage-fallback')
+// const {storage} = require('better-local-storage-fallback')
 
 // Use storage directly
 storage.setItem('foo', 'bar');
@@ -27,9 +28,9 @@ if (!('localStorage' in window)) {
 ```
 
 ## Browser Bundle
-
+(TODO)
 ```html
-<script src="https://unpkg.com/local-storage-fallback/lib/dist.min.js"></script>
+<script src="https://unpkg.com/better-local-storage-fallback/lib/dist.min.js"></script>
 <script>
   window.localStorageFallback.setItem('foo', 'bar')
 </script>
