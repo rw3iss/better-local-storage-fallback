@@ -1,0 +1,3 @@
+-convert to Typescript
+-implement common IStorage interface
+-add IDB support?
