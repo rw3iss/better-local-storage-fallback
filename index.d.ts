@@ -1,7 +1,19 @@
 type StorageFallback = Pick<Storage, 'clear' | 'getItem' | 'setItem' | 'removeItem' | 'getKey' | 'size'>;
+
 declare module 'better-local-storage-fallback' {
+
     const storage: Storage | StorageFallback;
     export default storage;
+
+    export const LocalStorage: {
+        prototype: StorageFallback;
+        new(): StorageFallback;
+    };
+
+    export const SessionStorage: {
+        prototype: StorageFallback;
+        new(): StorageFallback;
+    };
 
     export const CookieStorage: {
         prototype: StorageFallback;
@@ -14,4 +26,5 @@ declare module 'better-local-storage-fallback' {
     };
 
     export function isSupported(name?: string): boolean;
+
 }
