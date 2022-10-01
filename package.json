@@ -1,7 +1,7 @@
 {
-    "name": "local-storage-fallback",
-    "version": "4.1.2",
-    "description": "Check and use appropriate storage adapter for browser (localStorage, sessionStorage, cookies, memory)",
+    "name": "better-local-storage-fallback",
+    "version": "1.0.0",
+    "description": "Forked from ripeworks/local-storage-fallback, to allow localStorage with fallback support. This library is extended to support a unified interface for all 4 storage mechanisms (localStorage, sessionStorage, cookies, memory), with some other improvements.",
     "main": "lib/index.js",
     "typings": "index.d.ts",
     "files": [
@@ -16,17 +16,17 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ripeworks/local-storage-fallback.git"
+        "url": "git+https://github.com/rw3iss/local-storage-fallback.git"
     },
     "keywords": [
         "localStorage"
     ],
-    "author": "Mike Kruk <mike@ripeworks.com> (http://ripeworks.com)",
+    "author": "Ryan Weiss <rw3iss@gmail.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/ripeworks/local-storage-fallback/issues"
+        "url": "https://github.com/rw3iss/better-local-storage-fallback/issues"
     },
-    "homepage": "https://github.com/ripeworks/local-storage-fallback#readme",
+    "homepage": "https://github.com/rw3iss/better-local-storage-fallback#readme",
     "dependencies": {
         "cookie": "^0.3.1"
     },
@@ -36,6 +36,6 @@
         "babel-cli": "^6.8.0",
         "babel-preset-es2015": "^6.6.0",
         "jsdom": "^11.1.0",
-        "webpack": "^3.4.1"
+        "webpack": "^3.12.0"
     }
 }
