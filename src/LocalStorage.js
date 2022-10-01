@@ -1,21 +1,17 @@
 // wrapper for native window.localStorage
 export default class LocalStorage {
 
-    getItem(id) {
+    getItem(key, parse = true) {
         if (!window.localStorage) return undefined;
-        // Look in local storage for object
-        let key = this._getClassTypeName(id);
-        let str = window.localStorage.getItem(key);
-        if (str != null) {
+        let oStr = window.localStorage.getItem(key);
+        if (oStr != null && parse) {
             try {
-                let object = JSON.parse(str);
-                return object;
+                return JSON.parse(oStr);
             } catch (e) {
                 return null;
             }
         }
-
-        return str;
+        return oStr;
     }
 
     setItem(key, value) {
