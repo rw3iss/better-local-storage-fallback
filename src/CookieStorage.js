@@ -1,6 +1,6 @@
-import cookie from 'cookie'
+import cookie from 'cookie';
 
-let prefix = 'lS_'
+let prefix = 'lS_';
 
 export default class CookieStorage {
 

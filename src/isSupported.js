@@ -1,6 +1,6 @@
-import { hasCookies } from './CookieStorage'
+import { hasCookies } from './CookieStorage';
 
-const TEST_KEY = '__test'
+const TEST_KEY = '__test';
 
 function hasStorage(name) {
     try {

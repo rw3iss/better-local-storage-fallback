@@ -12,7 +12,7 @@
         "test": "ava",
         "build:node": "babel --presets es2015 src --out-dir lib",
         "build:browser": "webpack lib lib/dist.min.js -p --config webpack.config.js",
-        "prepublish": "mkdir lib && npm run build:node && npm run build:browser"
+        "prepublish": "rm -rf lib && mkdir lib && npm run build:node && npm run build:browser"
     },
     "repository": {
         "type": "git",
@@ -27,6 +27,9 @@
         "url": "https://github.com/rw3iss/better-local-storage-fallback/issues"
     },
     "homepage": "https://github.com/rw3iss/better-local-storage-fallback#readme",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
+    },
     "dependencies": {
         "cookie": "^0.3.1"
     },
